@@ -4,10 +4,11 @@
 
 import angular from 'angular';
 import uirouter from 'angular-ui-router';
-import {routerHelperProvider} from './router.config'
+import {constructorFn} from "../config/config.config";
+import {RouterHelperProvider} from "./router.config";
 
 angular.module('router', [
     uirouter
-]).provider('routerHelper', routerHelperProvider);
+]).provider('routerHelper', constructorFn(RouterHelperProvider));
 
 export const router = 'router';

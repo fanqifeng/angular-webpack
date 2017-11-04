@@ -14,7 +14,7 @@ class RetrieveController {
     }
 
     retrieve() {
-        this.$state.go('login');
+        this.retrieveService.retrieve({}).then(res=> this.$state.go('login'))
     }
 }
 

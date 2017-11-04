@@ -9,12 +9,12 @@ import uirouter from 'angular-ui-router';
 
 import {router} from '../router/router.module';
 import {appRun} from './config.route'
-import {configure} from "./config.config"
+import {Configure, constructorFn} from "./config.config"
 
 angular.module('config', [
     uirouter,
     router,
 ]).run(appRun)
-    .config(configure);
+    .config(constructorFn(Configure));
 
 export const config = 'config';
