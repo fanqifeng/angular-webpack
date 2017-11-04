@@ -1,0 +1,115 @@
+.login {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  .login-main {
+    @include display-flex;
+    @include flex-direction(column);
+    @include align-items(center);
+    position: absolute;
+    width: 400px;
+    height: 320px;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+    background: rgba(255, 255, 255, 0.50);
+    border-radius: 6px;
+    .login-header {
+      @include display-flex;
+      @include justify-content(center);
+      @include align-items(center);
+      height: 80px;
+      width: 100%;
+      border-radius: 6px 6px 0 0;
+      background: $normal-color;
+      font-size: $font-size-big;
+      font-weight: 700;
+      color: white;
+    }
+    .login-input {
+      @include display-flex;
+      @include flex-direction(column);
+      margin-top: 40px;
+      width: 300px;
+      height: 60px;
+      background: $input-background-color;
+      border-radius: 6px;
+      input {
+        flex: 1;
+        padding: 0 10px;
+        border: none;
+        background: $input-background-color;
+        font-size: $font-size-sm;
+        border-radius: 0;
+        border-bottom: 1px solid $border-default-color;
+        &:nth-of-type(1) {
+          border-radius: 6px 6px 0 0;
+          border-bottom: 1px solid $border-default-color;
+        }
+        &:nth-last-child(1) {
+          border-radius: 0 0 6px 6px;
+        }
+      }
+      .login-down {
+        position: absolute;
+        top: 3px;
+        right: 10px;
+        color: #9A9A9A;
+      }
+      .login-down-list{
+        top: 30px;
+        left: 0;
+        right: 0;
+        max-height: 140px;
+        background: #F4F4F4;
+        overflow: auto;
+        z-index: 2;
+        li{
+          height: 30px;
+          line-height: 30px;
+          padding-left: 20px;
+          &:hover{
+            background: #E5E5E5;
+          }
+        }
+      }
+    }
+    input[type='button'] {
+      height: 40px;
+      width: 300px;
+      margin-top: 10px;
+      background: $active-color;
+      border: none;
+      border-radius: 6px;
+      font-size: $font-size-sm;
+      color: #FFFFFF;
+    }
+    .find-password {
+      cursor: pointer;
+      font-size: 10px;
+      color: #F4F4F4;
+      text-decoration: none;
+    }
+    .free-register {
+      cursor: pointer;
+      font-size: 10px;
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+    .get-code {
+      top: 6px;
+      right: 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #5D99FF;
+      cursor: pointer;
+    }
+    input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 1000px $input-background-color inset;
+    }
+  }
+}

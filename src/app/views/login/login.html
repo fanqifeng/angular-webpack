@@ -1,0 +1,18 @@
+<main class="login">
+
+    <div class="login-main">
+        <div class="login-header">管理系统</div>
+        <div class="login-input">
+            <input type="tel" placeholder="手机号" ng-model="vm.username">
+            <input type="password" placeholder="密码" ng-model="vm.userPassword">
+        </div>
+        <div class="flex justify-content-end margin-top-md" style="width: 300px">
+            <a href="/retrieve" class="find-password">找回密码</a>
+        </div>
+        <input type="button" value="登录" ng-click="vm.login()">
+        <div class="flex justify-content-center margin-top-xl" style="width: 300px">
+            还没有账户？<a href="/register" class="free-register">免费注册</a>
+        </div>
+    </div>
+
+</main>

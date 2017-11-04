@@ -1,0 +1,50 @@
+//@mixin flex
+
+@mixin display-flex {
+  display: flex;
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+}
+
+@mixin justify-content($flex) {
+  justify-content: $flex;
+  -webkit-justify-content: $flex;
+}
+
+@mixin align-items($flex) {
+  align-items: $flex;
+  -webkit-align-items: $flex;
+}
+
+@mixin flex($flex) {
+  flex: $flex;
+  -webkit-flex: $flex;
+  -ms-flex: $flex;
+}
+
+@mixin flex-direction($flex) {
+  flex-direction: $flex;
+  -webkit-flex-direction: $flex;
+  -ms-flex-direction: $flex;
+}
+
+@mixin flex-wrap($flex) {
+  flex-wrap: $flex;
+  -webkit-flex-wrap: $flex;
+  -ms-flex-wrap: $flex;
+}
+
+@mixin align-self($flex) {
+  align-self: $flex;
+  -webkit-align-self: $flex;
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+}
+
+

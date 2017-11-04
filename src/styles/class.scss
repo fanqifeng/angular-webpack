@@ -1,0 +1,228 @@
+/*通用类定义*/
+.flex {
+  @include display-flex;
+}
+
+.column {
+  @include flex-direction(column);
+}
+
+.row {
+  @include flex-direction(row);
+}
+
+.wrap {
+  @include flex-wrap(wrap)
+}
+
+.nowrap {
+  @include flex-wrap(nowrap)
+}
+
+.justify-content-center {
+  @include justify-content(center);
+}
+
+.justify-content-between {
+  @include justify-content(space-between);
+}
+
+.justify-content-around {
+  @include justify-content(space-around);
+}
+
+.justify-content-start {
+  @include justify-content(flex-start);
+}
+
+.justify-content-end {
+  @include justify-content(flex-end);
+}
+
+.align-items-center {
+  @include align-items(center);
+}
+
+.align-items-start {
+  @include align-items(flex-start);
+}
+
+.align-items-end {
+  @include align-items(flex-end);
+}
+
+.align-items-stretch {
+  @include align-items(stretch);
+}
+
+.align-items-baseline {
+  @include align-items(baseline);
+}
+
+.align-self-center {
+  @include align-self(center);
+}
+
+.align-self-start {
+  @include align-self(flex-start);
+}
+
+.align-self-end {
+  @include align-self(flex-end);
+}
+
+.align-self-stretch {
+  @include align-self(stretch);
+}
+
+.align-self-baseline {
+  @include align-self(baseline);
+}
+
+.flex-1 {
+  @include flex(1);
+}
+
+.flex-2 {
+  @include flex(2);
+}
+
+.flex-3 {
+  @include flex(3);
+}
+
+.flex-4 {
+  @include flex(4);
+}
+
+.flex-5 {
+  @include flex(5);
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.pointer {
+   cursor: pointer;
+ }
+
+.bold {
+  font-weight: 700;
+}
+
+.margin-top-none {
+  margin-top: 0 !important;
+}
+
+.margin-top-sm {
+  margin-top: 5px !important;
+}
+
+.margin-top-md {
+  margin-top: 10px !important;
+}
+
+.margin-top-lg {
+  margin-top: 15px !important;
+}
+
+.margin-top-xl {
+  margin-top: 20px !important;
+}
+
+.margin-top-default {
+  margin-top: 30px !important;
+}
+
+.margin-right-none {
+  margin-right: 0 !important;
+}
+
+.margin-right-sm {
+  margin-right: 5px !important;
+}
+
+.margin-right-md {
+  margin-right: 10px !important;
+}
+
+.margin-right-lg {
+  margin-right: 15px !important;
+}
+
+.margin-right-xl {
+  margin-right: 20px !important;
+}
+
+.margin-right-default {
+  margin-right: 30px !important;
+}
+
+.margin-bottom-none {
+  margin-bottom: 0 !important;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 5px !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 10px !important;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 15px !important;
+}
+
+.margin-bottom-xl {
+  margin-bottom: 20px !important;
+}
+
+.margin-bottom-default {
+  margin-bottom: 30px !important;
+}
+
+.margin-left-none {
+  margin-left: 0 !important;
+}
+
+.margin-left-sm {
+  margin-left: 5px !important;
+}
+
+.margin-left-md {
+  margin-left: 10px !important;
+}
+
+.margin-left-lg {
+  margin-left: 15px !important;
+}
+
+.margin-left-xl {
+  margin-left: 20px !important;
+}
+
+.margin-left-default {
+  margin-left: 30px !important;
+}

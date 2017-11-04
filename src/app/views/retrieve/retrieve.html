@@ -1,0 +1,21 @@
+<main class="login">
+
+    <div class="login-main">
+        <div class="login-header">管理系统</div>
+        <div class="login-input" style="height: 90px">
+            <div class="flex-1 flex column relative">
+                <input type="tel" placeholder="手机号" ng-model="vm.telephone">
+                <span class="absolute get-code" ng-click="vm.getCode()">获取验证码</span>
+            </div>
+            <input type="text" placeholder="验证码" ng-model="vm.smsCode">
+            <input type="password" placeholder="请输入新密码" ng-model="vm.userPassword">
+        </div>
+
+        <div class="flex justify-content-end margin-top-md" style="width: 300px">
+            <a href="/login" class="find-password">返回登录</a>
+        </div>
+        <input type="button" value="确认" ng-click="vm.retrieve()">
+
+    </div>
+
+</main>
